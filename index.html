@@ -2,12 +2,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solo's Mobile | Web Design Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solo's Mobile | Web Design Studio</title>
+<meta name="description" content="Solo's Mobile creates clean, modern, mobile-first websites for businesses and personal brands.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#080d18;color:#edf2ff;line-height:1.7}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;background:#080d18ee;border-bottom:1px solid #202b40;padding:17px 7%;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.logo{font-size:21px;font-weight:bold;color:#fff}.logo span{color:#3985ff}
+nav{display:flex;gap:22px;font-size:14px;color:#b9c5d9}
+nav a:hover{color:#5595ff}
+section{padding:85px 8%;scroll-margin-top:65px}
+.hero{min-height:570px;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 30%,#12346a 0%,#080d18 55%)}
+.tag{color:#62a0ff;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(40px,7vw,68px);line-height:1.1;max-width:780px;margin:18px 0}
+h1 span,h2 span{color:#4b91ff}
+.hero p{max-width:620px;color:#b5c1d5;font-size:18px}
+.btn{display:inline-block;background:#2878ee;color:white;padding:13px 23px;border-radius:7px;margin:25px 10px 0 0;font-weight:bold}
+.btn.secondary{background:transparent;border:1px solid #49617f}
+h2{font-size:35px;margin:10px 0 18px}
+.intro{color:#b7c4d8;max-width:720px;margin-bottom:30px}
+.dark{background:#0d1524}
+.stats,.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:30px}
+.stat,.card{background:#111d30;border:1px solid #253651;padding:24px;border-radius:12px}
+.stat strong{display:block;font-size:28px;color:#65a0ff}
+.card h3{font-size:19px;margin-bottom:8px;color:#fff}
+.card p,.card li{color:#b7c4d8;font-size:14px}
+.card ul{padding-left:18px;margin-top:10px}
+.project-type{font-size:11px;color:#70a9ff;text-transform:uppercase;letter-spacing:1px}
+.timeline{border-left:2px solid #347ce8;padding-left:25px;margin-top:25px}
+.timeline article{margin:0 0 25px}
+.timeline h3{color:#fff}
+.timeline p{color:#b7c4d8}
+.contact a{color:#75aaff}
+footer{text-align:center;padding:28px;color:#8493aa;border-top:1px solid #243047;font-size:13px}
+@media(max-width:700px){header{align-items:flex-start;gap:12px;flex-direction:column}nav{gap:13px;flex-wrap:wrap;font-size:12px}section{padding:65px 7%}.hero{min-height:520px}}
+</style>
 </head>
 <body>
-  <h1>Solo's Mobile</h1>
-  <p>Websites that make small brands look established.</p>
+<header>
+<a class="logo" href="#home">Solo's <span>Mobile</span></a>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<div class="tag">Solo's Mobile · Web Design Studio</div>
+<h1>Websites that make small brands <span>look established.</span></h1>
+<p>I'm the designer behind Solo's Mobile. I create clean, modern, mobile-first websites for local businesses and personal brands — from the first sketch to a site you're genuinely proud to share.</p>
+<a class="btn" href="#projects">Explore my work</a>
+<a class="btn secondary" href="#contact">Let's work together</a>
+</div>
+</section>
+
+<section id="about">
+<div class="tag">A little about me</div>
+<h2>Designing websites with <span>purpose.</span></h2>
+<p class="intro">I'm a self-taught web designer and the founder of Solo's Mobile. Since starting in 2024, I've focused on helping small businesses and solo founders build a stronger online presence through clean design, clear structure and responsive websites.</p>
+<div class="stats">
+<div class="stat"><strong>2024</strong>Studio founded</div>
+<div class="stat"><strong>15+</strong>Projects designed</div>
+<div class="stat"><strong>24h</strong>Reply time</div>
+</div>
+</section>
+
+<section class="dark" id="services">
+<div class="tag">What I do</div>
+<h2>Services built around <span>your business.</span></h2>
+<p class="intro">Practical website solutions designed to help your brand look professional and connect with customers.</p>
+<div class="cards">
+<div class="card"><h3>Custom Website Design</h3><p>Modern website layouts tailored to your business goals and brand identity.</p></div>
+<div class="card"><h3>Website Redesign</h3><p>Improve the look, structure and user experience of an existing website.</p></div>
+<div class="card"><h3>Landing Pages</h3><p>Focused pages designed to introduce your offer and encourage enquiries.</p></div>
+<div class="card"><h3>Brand & Visual Identity</h3><p>Consistent visual elements that help your business present itself professionally.</p></div>
+<div class="card"><h3>Wix & No-Code Builds</h3><p>Flexible website builds using Wix and other no-code tools.</p></div>
+<div class="card"><h3>Website Care & Updates</h3><p>Content updates and improvements to keep your website current.</p></div>
+</div>
+<h3 style="margin-top:35px">My process</h3>
+<p class="intro">01. Discovery → 02. Design → 03. Build → 04. Launch</p>
+</section>
+
+<section id="projects">
+<div class="tag">Selected work</div>
+<h2>Projects & <span>concepts.</span></h2>
+<p class="intro">A selection of website design work and demonstration builds created to explore clear layouts, useful features and responsive experiences. This portfolio includes a mix of client projects and demo builds.</p>
+<div class="cards">
+<div class="card"><div class="project-type">Café · Website design</div><h3>Harbor & Co. Coffee</h3><p>A warm café website concept featuring menu highlights and a table-booking call to action.</p></div>
+<div class="card"><div class="project-type">Gym · Landing page</div><h3>Northside Fitness</h3><p>A fitness landing page concept focused on memberships and member enquiries.</p></div>
+<div class="card"><div class="project-type">Creative · Portfolio</div><h3>Lumen Photography</h3><p>An image-led photography portfolio concept with a clear enquiry flow.</p></div>
+<div class="card"><div class="project-type">Wellness · Website</div><h3>Bloom Wellness Spa</h3><p>A wellness website demonstration focused on services and a welcoming brand experience.</p></div>
+<div class="card"><div class="project-type">Property · Website</div><h3>Riverside Realty</h3><p>A real estate website concept designed to present property information clearly.</p></div>
+<div class="card"><div class="project-type">Home services · Website</div><h3>Peak Plumbing Co.</h3><p>A service business website concept with clear service information and enquiry prompts.</p></div>
+</div>
+</section>
+
+<section class="dark" id="experience">
+<div class="tag">My journey</div>
+<h2>Experience & <span>growth.</span></h2>
+<p class="intro">My journey has been built through practical design work, self-learning and continuous improvement.</p>
+<div class="timeline">
+<article><h3>2024 — Started my design journey</h3><p>Developed skills in website layouts, colour, typography and Wix/no-code tools.</p></article>
+<article><h3>2024 — First client projects</h3><p>Started applying my skills to website projects for businesses.</p></article>
+<article><h3>2025 — Studio growth</h3><p>Expanded my approach to include brand presentation and complete website experiences.</p></article>
+<article><h3>2026 — Continuing to build</h3><p>Focused on modern, mobile-first websites while continuing to develop my skills.</p></article>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="tag">Get in touch</div>
+<h2>Have a project in <span>mind?</span></h2>
+<p class="intro">Let's discuss how a professional website can help your business build a stronger online presence. I aim to respond within one business day.</p>
+<p><strong>Email:</strong> <a href="mailto:solosmobile.net@gmail.com">solosmobile.net@gmail.com</a></p>
+<p><strong>Instagram:</strong> <a href="https://www.instagram.com/solos_mobile/">@solos_mobile</a></p>
+<p><strong>Availability:</strong> Remote & worldwide</p>
+<a class="btn" href="mailto:solosmobile.net@gmail.com">Send me an email</a>
+</section>
+<footer>© 2026 Solo's Mobile. Web Design & Development. Remote & Worldwide.</footer>
 </body>
 </html>
